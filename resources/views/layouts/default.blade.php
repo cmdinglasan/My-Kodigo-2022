@@ -11,12 +11,12 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
         @livewireStyles
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ secure_asset('js/app.js') }}" defer></script>
     </head>
     <body class="bg-gray-100 text-gray-900">
         <div class="flex min-h-screen w-full">
@@ -27,7 +27,7 @@
                         <div class="flex items-center space-x-2">
                             <div class="flex-none"></div>
                             <div class="flex-1 flex items-center justify-center space-x-4">
-                                <img src="{{ asset('images/sprites/voters_box.png') }}" title="My Kodigo 2022" alt="Voters Box" class="inline-block w-10 h-10">
+                                <img src="{{ secure_asset('images/sprites/voters_box.png') }}" title="My Kodigo 2022" alt="Voters Box" class="inline-block w-10 h-10">
                                 <h1 class="text-2xl font-bold leading-tight text-gray-900 hidden md:block">
                                     {{ config('app.name', 'Laravel') }}
                                 </h1>
