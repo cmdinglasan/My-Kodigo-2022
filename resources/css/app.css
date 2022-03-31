@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Responsive Kodigo */
+#kodigo-presidents .custom-rows,
+#kodigo-vicePresidents .custom-rows,
+#kodigo-senators .custom-rows,
+#kodigo-representatives .custom-rows,
+#kodigo-partylists .custom-rows,
+#kodigo-mayors .custom-rows,
+#kodigo-viceMayors .custom-rows,
+#kodigo-sanggunians .custom-rows {
+  grid-template-rows: repeat(var(--row-count), 1fr);
+}
+
+@media screen and (min-width: 1024px) {
+  #kodigo-presidents .custom-rows,
+  #kodigo-vicePresidents .custom-rows,
+  #kodigo-senators .custom-rows,
+  #kodigo-representatives .custom-rows,
+  #kodigo-partylists .custom-rows,
+  #kodigo-mayors .custom-rows,
+  #kodigo-viceMayors .custom-rows,
+  #kodigo-sanggunians .custom-rows {
+    grid-template-rows: repeat(var(--row-template-count), 1fr);
+  }
+}
